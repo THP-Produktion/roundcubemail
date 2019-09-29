@@ -44,8 +44,15 @@ $config['plugins'] = array(
     'managesieve',
     'userinfo',
     'show_additional_headers',
-    'identity_select'
+    'identity_select',
+    'select_pagesize',
+    'message_highlight',
+    'show-folder-size',
+    'roundcube-easy-unsubscribe',
+    'devidentify_avatar'
 );
+
+
 
 $config['managesieve_port'] = 4190;
 $config['managesieve_host'] = 'tls://dovecot';
