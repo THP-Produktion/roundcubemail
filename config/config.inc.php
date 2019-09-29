@@ -41,7 +41,10 @@ $config['plugins'] = array(
     'archive',
     'zipdownload',
     'password',
-    'managesieve'
+    'managesieve',
+    'userinfo',
+    'show_additional_headers',
+    'identity_select'
 );
 
 $config['managesieve_port'] = 4190;
@@ -65,6 +68,7 @@ if (filter_var(getenv('DEBUG'), FILTER_VALIDATE_BOOLEAN)) {
   $config['log_driver'] = "file";
 }
 
+$config['identity_select_headers'] = array('Delivered-To');
 // Enables messages cache. Only 'db' cache is supported.
 // This requires an IMAP server that supports QRESYNC and CONDSTORE
 // extensions (RFC7162). See synchronize() in program/lib/Roundcube/rcube_imap_cache.php
