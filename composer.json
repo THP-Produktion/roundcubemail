@@ -20,10 +20,10 @@
         "roundcube/plugin-installer": "~0.1.6",
         "masterminds/html5": "~2.5.0",
         "endroid/qr-code": "~1.6.5",
-        "empowercreative/devidentify_avatar": "dev-master",
-        "SS88UK/roundcube-easy-unsubscribe": "dev-master",
+        "empowercreative/devidentify_avatar": "master",
+        "ss88/easy_unsubscribe": "dev-master",
         "jfcherng/show-folder-size": "dev-master",
-        "corbosman/message_highlight": "dev-master",
+        "cor/message_highlight": "dev-master",
         "tbsmcd/select_pagesize": "dev-master"
     },
     "require-dev": {
