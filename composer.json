@@ -20,7 +20,7 @@
         "roundcube/plugin-installer": "~0.1.6",
         "masterminds/html5": "~2.5.0",
         "endroid/qr-code": "~1.6.5",
-        "empowercreative/devidentify_avatar": "master",
+        "empowercreative/empoweravatar": "dev-master",
         "ss88/easy_unsubscribe": "dev-master",
         "jfcherng/show-folder-size": "dev-master",
         "cor/message_highlight": "dev-master",
