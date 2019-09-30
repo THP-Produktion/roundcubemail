@@ -19,18 +19,9 @@
         "pear/net_sieve": "~1.4.3",
         "roundcube/plugin-installer": "~0.1.6",
         "masterminds/html5": "~2.5.0",
-        "endroid/qr-code": "~1.6.5",
-        "empowercreative/empoweravatar": "dev-master",
-        "ss88/easy_unsubscribe": "dev-master",
-        "jfcherng/show-folder-size": "dev-master",
-        "cor/message_highlight": "dev-master",
-        "tbsmcd/select_pagesize": "dev-master"
+        "endroid/qr-code": "~1.6.5"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8.36 || ^5.7.21"
-    },
-    "suggest": {
-        "kolab/net_ldap3": "~1.1.1 required for connecting to LDAP",
-        "mkopinsky/zxcvbn-php": "^4.4.2 required for Zxcvbn password strength driver"
     }
 }
