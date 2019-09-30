@@ -1,11 +1,7 @@
 <?php
 
-if (getenv('DBUSER') !== false && getenv('DBPASS') !== false && getenv('DBNAME') !== false) {
-  $config['db_dsnw'] = 'mysql://' . getenv('DBUSER') . ':' . getenv('DBPASS') . '@mysql/' . getenv('DBNAME');
-  $config['db_prefix'] = 'mailcow_rc1';
-} else {
-  $config['db_dsnw'] = 'sqlite:////app/sqlite.db?mode=0640';
-}
+$config['db_dsnw'] = 'mysql://' . getenv('DBUSER') . ':' . getenv('DBPASS') . '@mysql/' . getenv('DBNAME');
+$config['db_prefix'] = 'mailcow_rc1';
 
 $config['log_driver'] = 'stdout';
 $config['db_dsnr'] = '';
@@ -14,8 +10,6 @@ $config['imap_conn_options'] = array(
   'ssl' => array('verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true)
 );
 
-
-
 $config['smtp_conn_options'] = array(
   'ssl' => array('verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true)
 );
@@ -23,7 +17,7 @@ $config['managesieve_conn_options'] = array(
   'ssl' => array('verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true)
 );
 
-$config['enable_installer'] = false;
+$config['enable_installer'] = true;
 
 $config['default_host'] = 'tls://dovecot';
 $config['default_port'] = '143';
@@ -45,11 +39,11 @@ $config['plugins'] = array(
     'userinfo',
     'show_additional_headers',
     'identity_select',
+    'show_folder_size',
     'select_pagesize',
+    'easy_unsubscribe',
     'message_highlight',
-    'show-folder-size',
-    'roundcube-easy-unsubscribe',
-    'devidentify_avatar'
+    'empoweravatar'
 );
 
 
@@ -98,7 +92,7 @@ $config['max_pagesize'] = 1000;
 $config['show_images'] = 1;
 $config['htmleditor'] = 4;
 $config['mail_read_time'] = 10;
-$config['logout_purge'] = true;
+$config['logout_purge'] = false;
 $config['check_all_folders'] = true;
 
 
